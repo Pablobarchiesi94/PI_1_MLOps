@@ -1,0 +1,17 @@
+sniffio
+starlette
+typing_extensions
+uvicorn
+scikit-learn
+click
+colorama
+fastapi[all]
+h11
+idna
+numpy
+pandas
+pydantic
+python-dateutil
+pytz
+six
+anyio
