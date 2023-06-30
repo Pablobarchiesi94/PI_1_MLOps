@@ -19,7 +19,7 @@ app = FastAPI()
 # Leo df_final para las primeras funciones
 df_final = pd.read_csv('df_final_limpio.csv')
 
-#Leo df_2000 para el modelo de recomendación
+#Leo df_4000 para el modelo de recomendación
 df=pd.read_csv('df_4000.csv')
         
 
@@ -86,7 +86,7 @@ def get_director(nombre_director: str):
     # Relleno los valores NaN en las columnas relevantes con valores adecuados para que no largue error
     df_final['crew'] = df_final['crew'].fillna('')
     df_final['return'] = df_final['return'].fillna(0)
-    # Obtener el éxito del director, detalles de las películas, costo y ganancia
+    # Obtengo el éxito del director, detalles de las películas, costo y ganancia
     director_data = df_final[df_final['crew'].str.contains(nombre_director, case=False)]
     éxito = director_data['return'].sum()
     peliculas = []
