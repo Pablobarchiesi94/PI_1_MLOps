@@ -58,3 +58,5 @@ Para ejecutar este proyecto, se requiere tener instaladas las siguientes depende
 
 •	Python (versión 3.x)
 •	Bibliotecas de Python: pandas, numpy, scikit-learn, fastapi, uvicorn
+
+**LINK DE API EN RENDER:** https://pi-1-mlops.onrender.com/docs
